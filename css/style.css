@@ -1,0 +1,31 @@
+@import url(http://fonts.googleapis.com/earlyaccess/cwtexkai.css);
+
+@font-face {
+  font-family: 'GangwonEdu_OTFBoldA';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEdu_OTFBoldA.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DeogonPrincess';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2205@1.0/DeogonPrincess.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'GangwonEdu_OTFBoldA';
+}
+
+.animate__animated.animate__fadeInDown {
+  --animate-duration: 3s;
+}
+
+.animate__animated.animate__fadeIn {
+  --animate-duration: 5s;
+}
+
+.custom_font {
+  font-family: 'cwtexkai', sans-serif;
+}
