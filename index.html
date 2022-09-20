@@ -39,17 +39,77 @@
       </div>
     </div>
   </nav>
-  <div class="text-bg-dark text-center p-5">
-    <h1 class="display-1 custom_font card-title animate__animated animate__fadeInDown p-5">望之似木鷄其德全</h1>
-    <p class="fs-4 display-6 animate__animated animate__fadeIn" style="font-family: 'DeogonPrincess';">보기에 마치 나무로 만든 닭과 같으니 그 덕이 완전하다.</p>
+  <div class="text-bg-dark text-center p-5" style="font-family: 'DeogonPrincess';">
+    <h1 class="display-1 card-title animate__animated animate__fadeInDown p-5">엉뚱이</h1>
+    <p class="fs-4 display-6 animate__animated animate__fadeIn">Hyeondong's TIL</p>
   </div>
-  <section>
-    <p class="text-center p-5 m-5">공사중</p>
+  <section class="main mb-5">
+      <button id="lotto-btn" class="btn btn-outline-warning pick">심심할 때 해보기</button>
+      <div class="m-3">
+        <label for="bouns" class="text-warning">보너스 번호 받기  
+        </label>
+        <input type="checkbox" id="bouns">
+        <button id="reset" class="btn btn-outline-warning p-1">초기화</button>
+      </div>
+    <div id="res" class="lotto-res"></div>
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
+    <script>
+      const lotto_button = document.querySelector("#lotto-btn")
+  
+      lotto_button.addEventListener("click", function() {
+        
+        const container = document.createElement("div")
+        container.classList.add("lotto-container")
+        
+        const bouns = document.querySelector("#bouns")
+
+        function give_color (...numbers) {
+          for (i of [...numbers]) {
+            const lotto_num = document.createElement("div")
+            lotto_num.classList.add("lotto-number")
+            const num = parseInt(i)
+            lotto_num.innerText = num
+            if (num < 11) {
+              lotto_num.style.backgroundColor = 'yellow';
+            }
+            else if (num < 21) {
+              lotto_num.style.backgroundColor = 'blue';
+            }
+            else if (num < 31) {
+              lotto_num.style.backgroundColor = 'red';
+            }
+            else if (num < 41) {
+              lotto_num.style.backgroundColor = 'grey';
+            }
+            else {
+            }
+            container.appendChild(lotto_num)
+            const res = document.querySelector("#res")
+            res.appendChild(container)
+          }
+        }
+
+        if (bouns.checked) {
+          const numbers = _.sampleSize(_.range(1, 46), 7)
+          give_color(...numbers)
+        }
+        else {
+          const numbers = _.sampleSize(_.range(1, 46), 6)
+          give_color(...numbers)
+        }
+      })
+
+      const reset = document.querySelector("#reset")
+      reset.addEventListener("click", function() {
+        const res = document.querySelector("#res")
+        res.innerText = ""
+      })
+    </script>
   </section>
   <footer class="bg-dark position-fixed bottom-0 w-100">
     <div class="container">
       <h3 class="text-center">
-        <p class="text-secondary fs-6 p-5"><i>Last updated 13 Sep 2022</i></p>
+        <p class="text-secondary fs-6 p-5"><i>Last updated 20 Sep 2022</i></p>
       </h3>
     </div>
   </footer>
