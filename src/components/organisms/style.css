@@ -1,0 +1,12 @@
+.Container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 280px, 335px;
+  height: 835px;
+}
+
+.Card {
+  margin: 100px;
+}

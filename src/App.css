@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,48 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.App {
+  background-color: #333333;
+}
+
+.Nav {
+  /* color */
+  color: white;
+  background-color: #000000;
+  
+  /* position */
+  position: fixed;
+  top: 0;
+
+  /* wh */
+  min-height: 100px;
+  width: 100%;
+
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.Footer {
+  /* color */
+  color: white;
+  background-color: #696969;
+
+  /* position */
+  position: fixed;
+  bottom: 0;
+
+  /* wh */
+  min-height: 145px;
+  width: 100%;
+
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
