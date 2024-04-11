@@ -1,12 +1,92 @@
-.Container {
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+.Cards {
+  height: 76vh;
+  background-color: #333333;
+
+  /* flex */
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  margin: 280px, 335px;
-  height: 835px;
+  justify-content: center;
 }
 
 .Card {
   margin: 100px;
+}
+
+/* Navigation Bar */
+
+.NavBar {
+  /* font */
+  font-size: calc(10px + 1vmin);
+
+  /* color */
+  color: white;
+  background-color: #000000;
+  
+  /* position */
+  /* position: fixed; */
+  /* top: 0; */
+
+  /* wh */
+  height: 12vh;
+  width: 100%;
+
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.GoToMainLink, .GithubLink {
+  margin: 0 3%;
+}
+
+.GoToMainLink {
+  font-weight: bold;
+}
+
+.IntroLink {
+  margin-inline-start: 10%;
+  margin-right: 3%;
+}
+
+.WebPjtLink, .OtherPjtLink {
+  margin: 0 3%;
+}
+
+.TistoryLink {
+  margin-inline-start: auto;
+  margin-right: 2%;
+}
+
+/* Footer */
+
+.Footer {
+  /* color */
+  color: white;
+  background-color: #696969;
+
+  /* position */
+  /* position: fixed; */
+  /* bottom: 0; */
+
+  /* wh */
+  height: 10vh;
+  width: 100%;
+
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }

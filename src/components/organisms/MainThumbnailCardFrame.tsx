@@ -1,14 +1,38 @@
+import { Link } from "react-router-dom"
 import MainThumbnailCard from "../mocules/MainThumbnailCard"
-import ThisPageIs from "../../pages/introduce/ThisPageIs"
 
-function MainThumbnailCards():JSX.Element {
+function MainThumbnailCardFrame():JSX.Element {
   return (
-    <div className="Container">
-      <div className="Card">
-        <MainThumbnailCard img="" path="intro/thispageis" element={<ThisPageIs />}/>
-      </div>
+    <div className="Cards">
+      <Link to="intro/thispageis">
+        <MainThumbnailCard img="https://dummyimage.com/300x200/000/fff" />
+      </Link>
+      <Link to="intro/thispageis">
+        <MainThumbnailCard img="https://dummyimage.com/300x200/000/fff" />
+      </Link>
+      <Link to="intro/thispageis">
+        <MainThumbnailCard img="https://dummyimage.com/300x200/000/fff" />
+      </Link>
+      <Link to="intro/thispageis">
+        <MainThumbnailCard img="https://dummyimage.com/300x200/000/fff" />
+      </Link>
+      <Link to="intro/thispageis">
+        <MainThumbnailCard img="https://dummyimage.com/300x200/000/fff" />
+      </Link>
+      <Link to="intro/thispageis">
+        <MainThumbnailCard img="https://dummyimage.com/300x200/000/fff" />
+      </Link>
+      <Link to="intro/thispageis">
+        <MainThumbnailCard img="https://dummyimage.com/300x200/000/fff" />
+      </Link>
+      <Link to="intro/thispageis">
+        <MainThumbnailCard img="https://dummyimage.com/300x200/000/fff" />
+      </Link>
+      <Link to="intro/thispageis">
+        <MainThumbnailCard img="https://dummyimage.com/300x200/000/fff" />
+      </Link>
     </div>
   )
 }
 
-export default MainThumbnailCards
+export default MainThumbnailCardFrame
