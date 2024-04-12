@@ -1,0 +1,17 @@
+.Main {
+  height: 78vh;
+  background-color: #333333;
+
+  /* flex */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.simplebar-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

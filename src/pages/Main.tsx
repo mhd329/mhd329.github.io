@@ -1,8 +1,9 @@
-import MainTemplate from "../components/templates/MainTemplate";
+import BaseTemplate from "../components/templates/BaseTemplate";
+import MainThumbnailCardsFrame from "../components/organisms/MainThumbnailCardsFrame";
 
 function Main():JSX.Element {
   return (
-    <MainTemplate />
+    <BaseTemplate FrameElement={<MainThumbnailCardsFrame />}/>
   );
 }
 

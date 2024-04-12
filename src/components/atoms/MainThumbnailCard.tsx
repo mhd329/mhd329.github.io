@@ -1,5 +1,5 @@
-import Card from 'react-bootstrap/Card';
 import "./style.css";
+import Card from 'react-bootstrap/Card';
 
 type MainThumbnailCardProps = {
   img: string;

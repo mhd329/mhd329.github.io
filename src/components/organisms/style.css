@@ -7,20 +7,15 @@ a:visited {
   color: white;
 }
 
-.Cards {
-  height: 76vh;
-  background-color: #333333;
+.CardsFrame {
+  margin-top: 8rem;
+  height: 78vh;
+  width: 72vw;
 
   /* flex */
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-.Card {
-  margin: 100px;
 }
 
 /* Navigation Bar */
@@ -86,7 +81,12 @@ a:visited {
 
   /* flex */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.Footer > p {
+  margin: 0;
+  padding: 0;
 }

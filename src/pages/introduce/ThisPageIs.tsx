@@ -1,8 +1,9 @@
+import BaseTemplate from "../../components/templates/BaseTemplate";
+
 function ThisPageIs():JSX.Element {
   return (
-    <div>
-      asdasdasdsss
-    </div>
+    // <BaseTemplate FrameElement={} />
+    <div>asdasd</div>
   )
 }
 
