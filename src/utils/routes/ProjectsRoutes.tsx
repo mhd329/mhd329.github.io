@@ -1,14 +1,11 @@
-import MainPage from "../../pages/MainPage";
-import { Route, Routes } from 'react-router-dom';
+import Main from "../../pages/Main";
 
 
-function SidebarRoutes(): JSX.Element {
+function ProjectsRoutes(): JSX.Element {
   return (
-    <Routes>
-      <Route path="/projects/outsourcing" element={<MainPage pageType="pjt" />} />
-    </Routes>
+    <Main contentType="pjt" />
   )
 }
 
 
-export default SidebarRoutes;
+export default ProjectsRoutes;

@@ -1,14 +1,11 @@
-import MainPage from "../../pages/MainPage";
-import { Route, Routes } from 'react-router-dom';
+import Main from "../../pages/Main";
 
 
-function SidebarRoutes(): JSX.Element {
+function IntroRoutes(): JSX.Element {
   return (
-    <Routes>
-      <Route path="/intro/this" element={<MainPage pageType="intro" />} />
-    </Routes>
+    <Main contentType="intro" />
   )
 }
 
 
-export default SidebarRoutes;
+export default IntroRoutes;

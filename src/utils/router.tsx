@@ -1,5 +1,6 @@
 import MainRoutes from "./routes/MainRoutes"
-import SidebarRoutes from "./routes/SidebarRoutes"
+import IntroRoutes from "./routes/IntroRoutes"
+import ProjectsRoutes from "./routes/ProjectsRoutes"
 
 
 interface routeObject {
@@ -15,11 +16,11 @@ const routeArray: Array<routeObject> = [
   },
   {
     path: "/intro/this",
-    element: SidebarRoutes
+    element: IntroRoutes
   },
   {
     path: "/projects/outsourcing",
-    element: SidebarRoutes
+    element: ProjectsRoutes
   },
 ]
 

@@ -1,12 +1,9 @@
-import MainPage from "../../pages/MainPage";
-import { Route, Routes } from 'react-router-dom';
+import Main from "../../pages/Main";
 
 
 function MainRoutes(): JSX.Element {
   return (
-    <Routes>
-      <Route path="/" element={<MainPage />} />
-    </Routes>
+    <Main contentType="main"/>
   )
 }
 
