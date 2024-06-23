@@ -1,3 +1,5 @@
+
+
 function Footer():JSX.Element {
   return (
     <div className="Footer">
@@ -8,7 +10,8 @@ function Footer():JSX.Element {
         E-mail : mhd329@kakao.com
       </p>
     </div>
-  )
+  );
 }
+
 
 export default Footer;

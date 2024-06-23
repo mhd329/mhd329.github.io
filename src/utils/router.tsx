@@ -1,28 +1,27 @@
-import Main from "../pages/Main";
-import ThisPageIs from "../pages/introduce/ThisPageIs";
+import MainRoutes from "./routes/MainRoutes"
+import SidebarRoutes from "./routes/SidebarRoutes"
+
 
 interface routeObject {
   path: string
   element: () => JSX.Element
 }
 
-const routeArray:Array<routeObject> = [
+
+const routeArray: Array<routeObject> = [
   {
     path: '/',
-    element: Main
+    element: MainRoutes
   },
   {
-    path: "/intro/thispageis/",
-    element: ThisPageIs
+    path: "/intro/this",
+    element: SidebarRoutes
   },
   {
-    path: "/webpjts/",
-    element: Main
+    path: "/projects/outsourcing",
+    element: SidebarRoutes
   },
-  {
-    path: "/otherpjts/",
-    element: Main
-  }
 ]
+
 
 export default routeArray

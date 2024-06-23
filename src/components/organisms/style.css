@@ -9,6 +9,8 @@ a:visited {
 
 .CardsFrame {
   margin-top: 8rem;
+  /* margin-top: 14vh; */
+  margin-bottom: 20vh;
   height: 78vh;
   width: 72vw;
 
@@ -22,7 +24,7 @@ a:visited {
 
 .NavBar {
   /* font */
-  font-size: calc(10px + 1vmin);
+  font-size: calc(10px + 2vmin);
 
   /* color */
   color: white;
@@ -43,7 +45,7 @@ a:visited {
 }
 
 .GoToMainLink, .GithubLink {
-  margin: 0 3%;
+  margin: 0 4%;
 }
 
 .GoToMainLink {
@@ -51,11 +53,11 @@ a:visited {
 }
 
 .IntroLink {
-  margin-inline-start: 10%;
+  margin-inline-start: 7%;
   margin-right: 3%;
 }
 
-.WebPjtLink, .OtherPjtLink {
+.PjtLink {
   margin: 0 3%;
 }
 

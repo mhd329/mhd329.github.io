@@ -2,13 +2,13 @@ import "./style.css";
 import { Carousel } from "react-bootstrap";
 
 
-function Skills(): JSX.Element {
-  return(
+function ThisSiteIs(): JSX.Element {
+  return (
     <Carousel>
-
+      
     </Carousel>
   )
 }
 
 
-export default Skills;
+export default ThisSiteIs;

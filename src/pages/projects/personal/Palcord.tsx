@@ -2,7 +2,7 @@ import "./style.css";
 import { Carousel } from "react-bootstrap";
 
 
-function Skills(): JSX.Element {
+function MiniScheduler(): JSX.Element {
   return(
     <Carousel>
 
@@ -11,4 +11,4 @@ function Skills(): JSX.Element {
 }
 
 
-export default Skills;
+export default MiniScheduler;

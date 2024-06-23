@@ -1,8 +1,18 @@
 import "./style.css";
-import { Link } from "react-router-dom";
 
-// function SideBar():JSX.Element {
-//   return (
-    
-//   )
-// }
+
+interface SidebarProps {
+  buttonType: string;
+}
+
+
+function Sidebar(props: SidebarProps):JSX.Element {
+  return (
+    <div className="Sidebar">
+      {props.buttonType}
+    </div>
+  )
+}
+
+
+export default Sidebar;
